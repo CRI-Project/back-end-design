@@ -1,0 +1,42 @@
+server:
+  port: 8084
+spring:
+  rabbitmq:
+    host: 8.141.56.170
+    port: 5672
+    virtual-host: /
+    username: lzz
+    password: 123456
+    listener:
+      type: simple
+      simple:
+        default-requeue-rejected: false
+        acknowledge-mode: auto
+  mail:
+    host: smtp.163.com
+    username: mark_lzz@163.com
+    password: Qqq1313449
+    default-encoding: UTF-8
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    #MySQL����
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://8.141.56.170:3306/csmu_cri?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+#  redis:
+#    port: 6379
+#    host: 8.141.56.170
+#    password:
+#mybatis-plus ����
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+
+
+logging:
+  level:
+    com.kkb.cubemall: debug
+  # client_secret: d4660fb2c048b91b19bea755f79ca1e1e088b175
