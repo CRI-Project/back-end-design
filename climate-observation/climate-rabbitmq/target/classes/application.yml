@@ -1,0 +1,31 @@
+spring:
+  rabbitmq:
+    host: 8.141.56.170
+    port: 5672
+    virtual-host: /
+    username: lzz
+    password: 123456
+    listener:
+      type: simple
+      simple:
+        default-requeue-rejected: false
+        acknowledge-mode: manual
+
+  datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
+        #MySQL配置
+        driverClassName: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://8.141.56.170:3306/csmu_cri?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+        username: root
+        password: root
+    #  redis:
+    #    port: 6379
+    #    host: 8.141.56.170
+    #    password:
+    #mybatis-plus 配置
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+  port: 8083
+
