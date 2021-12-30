@@ -1,5 +1,8 @@
 # back-end-design
 ## Project structure
+## how to start the project in linux
+## first you need to install jdk1.8 or above
+## then execute the command "nohup java -jar xxx.jar" to run this project on the background
 <pre>
 .
 ├── HELP.md
