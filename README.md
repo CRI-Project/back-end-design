@@ -12,22 +12,22 @@
 │       │   │   └── com
 │       │   │       └── lzz
 │       │   │           └── climate
-│       │   │               ├── ClimateApplication.java
+│       │   │               ├── ClimateApplication.java (start project as a consumer in rabbitmq)
 │       │   │               ├── config
-│       │   │               │   ├── InterceptorConfig.java
+│       │   │               │   ├── InterceptorConfig.java (intercept some request we need to check the precondition)
 │       │   │               │   ├── MybatisPlusConfig.java
-│       │   │               │   ├── RabbitmqConfig.java
+│       │   │               │   ├── RabbitmqConfig.java (create exchanges and queues when we first request the method but find that there do not exist some)
 │       │   │               │   └── SecurityConfig.java
 │       │   │               ├── consumer
-│       │   │               │   ├── ClimateDataConsumer.java
-│       │   │               │   └── ClimateDataTestConsumer.java
+│       │   │               │   ├── ClimateDataConsumer.java (consume the messages)
+│       │   │               │   └── ClimateDataTestConsumer.java (consume the messages)
 │       │   │               ├── controller
-│       │   │               │   ├── SensorController.java
-│       │   │               │   ├── SensordataController.java
-│       │   │               │   ├── SensordatatestController.java
-│       │   │               │   └── UserInfoController.java
+│       │   │               │   ├── SensorController.java (crud of sensor)
+│       │   │               │   ├── SensordataController.java (crud of message)
+│       │   │               │   ├── SensordatatestController.java (crud of message)
+│       │   │               │   └── UserInfoController.java (crud of users login register)
 │       │   │               ├── dao
-│       │   │               │   ├── SensorDao.java
+│       │   │               │   ├── SensorDao.java (database operation)
 │       │   │               │   ├── SensordataDao.java
 │       │   │               │   ├── SensordatatestDao.java
 │       │   │               │   └── UserInfoDao.java
@@ -87,10 +87,10 @@
 │       │   ├── java
 │       │   │   └── com
 │       │   │       └── lzz
-│       │   │           ├── ClimateRabbitmqApplication.java
+│       │   │           ├── ClimateRabbitmqApplication.java (start project as a producer in rabbitmq)
 │       │   │           └── rabbitmq
 │       │   │               ├── config
-│       │   │               │   └── RabbitmqConfig.java
+│       │   │               │   └── RabbitmqConfig.java (create exchanges and queues when we first request the method but find that there do not exist some)
 │       │   │               ├── controller
 │       │   │               │   └── SentDataController.java
 │       │   │               ├── entity
