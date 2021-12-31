@@ -47,7 +47,7 @@
 │       │   │               ├── filter
 │       │   │               │   └── filter.java
 │       │   │               ├── interceptor
-│       │   │               │   └── JWTInterceptor.java
+│       │   │               │   └── JWTInterceptor.java (intercept some request we need to check the precondition)
 │       │   │               ├── service
 │       │   │               │   ├── SensorService.java
 │       │   │               │   ├── SensordataService.java
