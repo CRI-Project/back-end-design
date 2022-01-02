@@ -3,6 +3,8 @@
 ## how to start the project in linux
 - first you need to install jdk1.8 or above
 - then execute the command to run this project on the background<pre>nohup java -jar <Jar_Package_Name>.jar</pre> 
+**Hint:**
+You can download jar files from [@ Baidu Netdisk](https://pan.baidu.com/s/1GxXVp_n5ejZLgwmzeIdjgQ), [@ Google Drive](https://drive.google.com/drive/folders/16v6IR2Z6iUJrjWRO28L27aog0YoRvsfB?usp=sharing) 
 ## Project structure
 <pre>
 .
