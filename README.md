@@ -2,7 +2,7 @@
 
 ## how to start the project in linux
 - first you need to install jdk1.8 or above
-- then execute the command "nohup java -jar xxx.jar" to run this project on the background
+- then execute the command to run this project on the background<pre>nohup java -jar <Jar_Package_Name>.jar</pre> 
 ## Project structure
 <pre>
 .
